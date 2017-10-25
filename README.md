@@ -57,8 +57,8 @@ If *padding* is not specified, this function use a white space (`'\u0020'`) as a
 | Parameter |  Type  | Description                      |
 |-----------|--------|----------------------------------|
 | source    | string | The source string.               |
-| length    | number | The length of the result text. (Optional, and `source.length` in default. |
-| padding   | string | The padding characters. (Optional, and `' '` in default. |
+| length    | number | The length of the result text. (Optional, and `source.length` in default.) |
+| padding   | string | The padding characters. (Optional, and `' '` in default.) |
 
 #### Return:
 
