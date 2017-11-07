@@ -1,21 +1,14 @@
 'use strict';
 
-var repeat = require('@fav/text.repeat');
+var padRight;
 
-function padRight(source, length, padding) {
-  if (!length || length <= source.length) {
-    return source;
-  }
-
-  if (!padding) {
-    padding = ' ';
-  }
-
-  var padsLen = length - source.length;
-  var padsNum = Math.ceil(padsLen / padding.length);
-  var pads = repeat(padding, padsNum).slice(0, padsLen);
-
-  return source + pads;
+/* istanbul ignore if */
+if (!Boolean(String.prototype.padEnd)) {
+  padRight = require('./lib/pad-right');
+} else {
+  padRight = function(source, length, padding) {
+    return source.padEnd(length, padding || ' ');
+  };
 }
 
 module.exports = padRight;
