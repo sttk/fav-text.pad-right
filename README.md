@@ -51,6 +51,7 @@ If *padding* is not specified, this function use a white space (`'\u0020'`) as a
 
 **NOTE:** This function doesn't check data types of the arguments, and assumes that they are given as per the specific data type.
 
+**NOTE:** This function is different from `String#padEnd` at the point that it uses a white space (`'\u0020'`) as *padding* when specified `null` or an empty string to *padding*. 
 
 #### Parameter:
 
