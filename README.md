@@ -1,6 +1,6 @@
 # [@fav/text.pad-right][repo-url] [![NPM][npm-img]][npm-url] [![MIT License][mit-img]][mit-url] [![Build Status][travis-img]][travis-url] [![Build Status][appveyor-img]][appveyor-url] [![Coverage status][coverage-img]][coverage-url]
 
-Pad characters on right sides of a source string.
+Pads characters on right sides of a source string.
 
 > "fav" is an abbreviation of "favorite" and also the acronym of "for all versions".
 > This package is intended to support all Node.js versions and many browsers as possible.
@@ -20,7 +20,7 @@ $ npm install --save @fav/text.pad-right
 
 ## Usage
 
-For Node.js, when installing `@fav/text.pad-right` from npm:
+For Node.js:
 
 ```js
 var padRight = require('@fav/text.pad-right');
@@ -51,7 +51,7 @@ If *padding* is not specified, this function use a white space (`'\u0020'`) as a
 
 **NOTE:** This function doesn't check data types of the arguments, and assumes that they are given as per the specific data type.
 
-**NOTE:** This function is different from `String#padEnd` at the point that it uses a white space (`'\u0020'`) as *padding* when specified `null` or an empty string to *padding*. 
+**NOTE:** This function is different from `String#padEnd` at the point that this function uses a white space (`'\u0020'`) as *padding* when specified `null` or an empty string to *padding*.
 
 #### Parameter:
 
@@ -68,7 +68,7 @@ The padded string.
 **Type:** string
 
 
-## Checked                                                                      
+## Checked
 
 ### Node.js (4〜8)
 
